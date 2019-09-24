@@ -1,0 +1,29 @@
+.slider {
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+
+  ul {
+    display: block;
+    transition: all 1s;
+    transform: translate(0px);
+
+    li {
+      display: inline-block;
+      width: 200px;
+      height: 300px;
+      font-family: sans-serif;
+      font-size: 100px;
+      color: white;
+      background-color: coral;
+      margin: 5px;
+    }
+  }
+}
+
+.controls {
+  display: block;
+  text-align: center;
+}
