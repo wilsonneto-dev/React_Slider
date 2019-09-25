@@ -4,6 +4,7 @@
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
+  position: relative;
 
   ul {
     display: block;
@@ -25,5 +26,18 @@
 
 .controls {
   display: block;
+  width: 100%;
   text-align: center;
+  position: absolute;
+  top: 50%;
+
+  & * {
+    position: absolute;
+    &:first-child {
+      left: 0;
+    }
+    &:last-child {
+      right: 0;
+    }
+  }
 }
