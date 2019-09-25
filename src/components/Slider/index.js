@@ -31,7 +31,11 @@ export default class Slider extends Component {
   }
 
   handlePosition(moves) {
-    this.setState({ position: this.state.position + moves });
+    const { position } = this.state;
+    let newPosition = position + moves;
+    if(newPosition > 0) newPosition = 0;
+
+    this.setState({ position: newPosition });
   }
 
   render(){
